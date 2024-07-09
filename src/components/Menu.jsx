@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Menu = ({ setMenuBar, menuBar }) => {
   return (
@@ -17,26 +18,26 @@ const Menu = ({ setMenuBar, menuBar }) => {
         </div>
         <hr />
         <div className="flex flex-col gap-2">
-          <a href="#"
+          <Link to="/aboutus"
             className="text-white flex items-center gap-2 hover:bg-white hover:text-black rounded-full px-6 py-4 text-xl font-medium transition duration-250">
             About US
-          </a>
-          <a href="#"
+          </Link>
+          <Link to="/#solutions"
             className="text-white flex items-center gap-2 hover:bg-white hover:text-black rounded-full px-6 py-4 text-xl font-medium transition duration-250">
             Solutions
-          </a>
-          <a href="#"
+          </Link>
+          <Link to="/careers"
             className="text-white flex items-center gap-2 hover:bg-white hover:text-black rounded-full px-6 py-4 text-xl font-medium transition duration-250">
             Careers
-          </a>
-          <a href="#"
+          </Link>
+          <Link to="/#services"
             className="text-white flex items-center gap-2 hover:bg-white hover:text-black rounded-full px-6 py-4 text-xl font-medium transition duration-250">
             Services
-          </a>
-          <a href="#"
+          </Link>
+          <Link to="/contactus"
             className="text-white flex items-center gap-2 hover:bg-white hover:text-black rounded-full px-6 py-4 text-xl font-medium transition duration-250">
             Conact Us
-          </a>
+          </Link>
 
         </div>
       </div>
