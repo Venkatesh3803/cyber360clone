@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background: #04042C;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.main {
+  width: 80%;
+  margin: auto;
+}
+
+
+
+.bg-gradient {
+  background: rgb(181, 178, 212);
+  background: linear-gradient(0deg, rgba(181, 178, 212, 1) 0%, rgba(253, 218, 193, 1) 100%);
+}
+
+.box-shadow {
+  -webkit-box-shadow: 3px 2px 96px 6px rgba(207, 203, 207, 1);
+  -moz-box-shadow: 3px 2px 96px 6px rgba(207, 203, 207, 1);
+  box-shadow: 3px 2px 96px 6px rgba(207, 203, 207, 1);
+}
+
+.menu {
+  background: rgb(20, 40, 117);
+  background: linear-gradient(90deg, rgba(20, 40, 117, 1) 0%, rgba(48, 82, 208, 1) 100%);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-infinite {
+  animation: spin 90s linear infinite;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar.hidden {
+  transform: translateY(-100%);
+}
+
+.navbar.visible {
+  transform: translateY(0);
+}
