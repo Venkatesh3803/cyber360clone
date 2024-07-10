@@ -15,7 +15,7 @@ const AboutUs = () => {
         {/* Headquartered in the vibrant city of Hyderabad, India. section */}
         <div className=' main md:flex block text-white w-full lg:h-[88vh]'>
           <div className="flex-1 flex flex-col justify-center gap-12">
-            <h1 className='text-4xl lg:text-[3rem] font-bold leading-[50px] lg:leading-[60px]'>Headquartered in the vibrant city of Hyderabad, India.</h1>
+            <h1 className='text-4xl lg:text-[3rem] font-bold leading-[50px] lg:leading-[60px] text-ellipsis'>Headquartered in the vibrant city of Hyderabad, India.</h1>
             <p className="text-xl lg:text-[24px] leading-[38px] font-light">"At Cyber360 Technologies, excellence defines our consulting services in Identity and Access Management (IAM) solutions. Leveraging vast experience, we adeptly identify and tackle the nuances and challenges of IAM, aligning seamlessly with business objectives."
             </p>
             <p className="text-xl lg:text-[24px] leading-[38px] font-light"> "Our global experience, industry-leading intelligence, and commitment to innovation redefine the standards of secure, trusted, and integrated cyber protection services for government agencies and businesses."

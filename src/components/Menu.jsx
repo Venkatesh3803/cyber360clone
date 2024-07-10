@@ -22,7 +22,7 @@ const Menu = ({ setMenuBar, menuBar }) => {
             className="text-white flex items-center gap-2 hover:bg-white hover:text-black rounded-full px-6 py-4 text-xl font-medium transition duration-250">
             About US
           </Link>
-          <Link to="/#solutions"
+          <Link to="/#solutions" onClick={()=> setMenuBar(false)}
             className="text-white flex items-center gap-2 hover:bg-white hover:text-black rounded-full px-6 py-4 text-xl font-medium transition duration-250">
             Solutions
           </Link>
@@ -30,7 +30,7 @@ const Menu = ({ setMenuBar, menuBar }) => {
             className="text-white flex items-center gap-2 hover:bg-white hover:text-black rounded-full px-6 py-4 text-xl font-medium transition duration-250">
             Careers
           </Link>
-          <Link to="/#services"
+          <Link to="/#services" onClick={()=> setMenuBar(false)}
             className="text-white flex items-center gap-2 hover:bg-white hover:text-black rounded-full px-6 py-4 text-xl font-medium transition duration-250">
             Services
           </Link>

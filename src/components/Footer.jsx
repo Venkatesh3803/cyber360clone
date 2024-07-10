@@ -1,12 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { FaTwitter, FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
+
 
 const Footer = () => {
     return (
         <>
             <div className='main text-white py-5'>
-                <div className="flex items-center justify-around">
-                    <div className="flex-[2] flex items-center justify-around">
+                <div className="lg:flex items-center">
+                    <div className="flex-[2] flex-col sm:flex-row flex sm:items-center gap-5 justify-around">
                         <div className="flex flex-col gap-5">
                             <h3 className='text-2xl font-bold'>Useful Links</h3>
                             <ul>
@@ -42,14 +44,14 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="flex-[1] text-center">
+                    <div className="flex-[1] mt-5">
                         <div className="flex flex-col gap-5">
                             <h3 className='text-2xl font-bold'>Stay Connected</h3>
-                            <ul>
-                                <li className='cursor-pointer'>Home</li>
-                                <li className='cursor-pointer'>About Us</li>
-                                <li className='cursor-pointer'>Careers</li>
-                                <li className='cursor-pointer'>Contact Us</li>
+                            <ul className='flex  gap-4'>
+                                <li className='cursor-pointer'><FaTwitter  size={30}/></li>
+                                <li className='cursor-pointer'><FaFacebookSquare size={30}/></li>
+                                <li className='cursor-pointer'><FaInstagramSquare size={30}/></li>
+                             
                             </ul>
                         </div>
                     </div>

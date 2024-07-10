@@ -81,8 +81,8 @@ const Services = () => {
     }
 
     return (
-        <div id='services' className="relative w-full bg-[#070739] lg:min-h-[150vh] h-[150vh]">
-            <video width={1500} height={240} style={{ zIndex: "-1" }} autoPlay loop muted>
+        <div id='services' className="relative w-full bg-[#070739] md:min-h-[150vh] h-[160vh]">
+            <video width={1500} height={240} style={{ zIndex: "-1" }} autoPlay loop muted >
                 <source src="https://cyber360technologies.com/media/video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
@@ -108,7 +108,7 @@ const Services = () => {
                                     <div className={`flex flex-col gap-5 absolute top-0 bg-gray-700 rounded-2xl z-10 opacity-0 transition-all duration-500   ${showAnswer === i ? "p-5 opacity-100 top-28 w-full" : "p-0 top-0 w-full"} `}>
                                         {showAnswer === i && item.answers.map((ans) => {
                                             return (
-                                                <p className='text-xl font-semibold transition-all duration-500'>* {ans}</p>
+                                                <p className='text-sm md:text-lg lg:text-xl font-semibold transition-all duration-500'>* {ans}</p>
                                             )
                                         })}
                                     </div>

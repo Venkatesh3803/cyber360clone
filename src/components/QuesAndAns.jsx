@@ -40,7 +40,7 @@ const QuesAndAns = () => {
 
     return (
 
-        <div className="main w-full py-10 text-white">
+        <div className="w-[90%] m-auto  lg:w-[80%] py-10 text-white">
             <div className="lg:flex relative ">
                 <div className="flex-1 md:flex  items-center">
                     <h1 className='w-[100%] lg:w-[50%] md:text-5xl lg:text-7xl text-3xl font-bold '>Frequently Asked Questions.</h1>
@@ -51,7 +51,7 @@ const QuesAndAns = () => {
                         {questionAndAnswers.map((qa, i) => {
                             return (
                                 <>
-                                    <div key={qa.id} className="text-xl font-semibold flex gap-5 cursor-pointer" onClick={() => setShowAnswer(i)}>
+                                    <div key={qa.id} className="md:text-xl font-semibold flex justify-between gap-5 cursor-pointer" onClick={() => setShowAnswer(i)}>
                                         <p>{qa.question}</p>
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
